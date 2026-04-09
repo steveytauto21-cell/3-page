@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Tibok Café - Taytay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { charcoal: '#121212', pandaPink: '#D70F64' },
+                    fontFamily: { outfit: ['Outfit', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-charcoal text-white font-outfit">
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 bg-charcoal/90 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter uppercase italic">Tibok <span class="text-pandaPink">Café</span></a>
+            <div class="hidden md:flex space-x-8 font-medium uppercase text-sm tracking-widest">
+                <a href="index.html" class="hover:text-pandaPink transition">Home</a>
+                <a href="menu.html" class="text-pandaPink">Menu</a>
+                <a href="booking.html" class="hover:text-pandaPink transition">Booking</a>
+            </div>
+            <a href="https://www.foodpanda.ph/restaurant/eohy/tibok-cafe-taytay" target="_blank" class="bg-pandaPink px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest">Foodpanda</a>
+        </div>
+    </nav>
+
+    <main class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h1 class="text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-4">Our <span class="text-pandaPink text-outline">Brew</span></h1>
+            <p class="text-gray-400 tracking-widest uppercase text-sm">Industrial Grade Coffee & Comfort Food</p>
+        </div>
+
+        <!-- Menu Categories -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Signature Section -->
+            <div class="border border-white/10 p-8 hover:border-pandaPink transition duration-500">
+                <h2 class="text-pandaPink font-bold uppercase tracking-widest mb-6 border-b border-white/10 pb-2">Signature Coffee</h2>
+                <div class="space-y-6">
+                    <div class="flex justify-between items-end">
+                        <div><h3 class="font-bold text-lg">Tibok Signature</h3><p class="text-xs text-gray-500 italic">Espresso + Secret Blend</p></div>
+                        <span class="font-bold">₱165</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div><h3 class="font-bold text-lg">Sea Salt Latte</h3><p class="text-xs text-gray-500 italic">Creamy, salty, perfection</p></div>
+                        <span class="font-bold">₱150</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div><h3 class="font-bold text-lg">Dirty Horchata</h3><p class="text-xs text-gray-500 italic">Cinnamon rice milk + Espresso</p></div>
+                        <span class="font-bold">₱175</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non-Caffeine Section -->
+            <div class="border border-white/10 p-8 hover:border-pandaPink transition duration-500">
+                <h2 class="text-pandaPink font-bold uppercase tracking-widest mb-6 border-b border-white/10 pb-2">Non-Caffeine</h2>
+                <div class="space-y-6">
+                    <div class="flex justify-between items-end">
+                        <div><h3 class="font-bold text-lg">Dark Cocoa</h3><p class="text-xs text-gray-500 italic">Premium Belgian Chocolate</p></div>
+                        <span class="font-bold">₱140</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div><h3 class="font-bold text-lg">Matcha Zen</h3><p class="text-xs text-gray-500 italic">Ceremonial grade whisked</p></div>
+                        <span class="font-bold">₱160</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div><h3 class="font-bold text-lg">Hibiscus Fizz</h3><p class="text-xs text-gray-500 italic">Refreshing floral soda</p></div>
+                        <span class="font-bold">₱130</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snacks Section -->
+            <div class="border border-white/10 p-8 hover:border-pandaPink transition duration-500">
+                <h2 class="text-pandaPink font-bold uppercase tracking-widest mb-6 border-b border-white/10 pb-2">Bar Bites</h2>
+                <div class="space-y-6">
+                    <div class="flex justify-between items-end">
+                        <div><h3 class="font-bold text-lg">Grilled Cheese</h3><p class="text-xs text-gray-500 italic">Three-cheese melt with dip</p></div>
+                        <span class="font-bold">₱180</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div><h3 class="font-bold text-lg">Truffle Fries</h3><p class="text-xs text-gray-500 italic">Real truffle oil + Parmesan</p></div>
+                        <span class="font-bold">₱145</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div><h3 class="font-bold text-lg">Industrial Pasta</h3><p class="text-xs text-gray-500 italic">Spicy garlic oil base</p></div>
+                        <span class="font-bold">₱210</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 text-center">
+            <p class="text-gray-500 mb-6 italic italic">Hungry? We deliver via Foodpanda daily from 12PM.</p>
+            <a href="https://www.foodpanda.ph/restaurant/eohy/tibok-cafe-taytay" class="inline-flex items-center gap-3 bg-pandaPink px-10 py-4 font-bold uppercase tracking-widest hover:brightness-110 transition">
+                <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4 11h-3v3c0 .55-.45 1-1 1s-1-.45-1-1v-3H8c-.55 0-1-.45-1-1s.45-1 1-1h3V8c0-.55.45-1 1-1s1 .45 1 1v3h3c.55 0 1 .45 1 1s-.45 1-1 1z"/></svg>
+                Order on Foodpanda
+            </a>
+        </div>
+    </main>
+
+    <footer class="border-t border-white/10 py-12 px-6 text-center">
+        <p class="text-gray-500 text-sm tracking-widest uppercase">Tibok Café — Taytay — 0999 985 9489</p>
+    </footer>
+
+</body>
+</html>
